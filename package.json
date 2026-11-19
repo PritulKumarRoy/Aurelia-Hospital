@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "node server.js --dev",
     "build": "cd client && npm install && npm run build",
-    "start": "node server.js",
+    "start": "npm run build && node server.js",
     "preview": "node server.js",
     "clean": "rm -rf client/dist",
     "lint": "tsc -p client/tsconfig.json --noEmit"

@@ -2,5 +2,7 @@
   "name": "Aurelia Private Hospital",
   "description": "Private medical and surgical hospital offering consultant-led cardiology, neurology, orthopedics, internal medicine, and appointment scheduling.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }
