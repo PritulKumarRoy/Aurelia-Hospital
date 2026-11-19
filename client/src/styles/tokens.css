@@ -1,0 +1,133 @@
+/* ==========================================================================
+   Nordic Sanctuary — Design System Tokens
+   Aurelia Private Hospital
+   ========================================================================== */
+
+:root {
+  /* ------------------------------------------------------------------------
+     1. Color System (1 Neutral Base, 1 Primary, 1 Accent, Semantic States)
+     ------------------------------------------------------------------------ */
+  --color-base: #F8F6F1; /* Limestone alabaster */
+  --color-surface: #FFFFFF;
+  --color-surface-tinted: #F1EDE4;
+  --color-ink: #172423;
+  --color-ink-muted: #4C5B5A;
+
+  --color-primary: #103736; /* Deep pine-teal */
+  --color-primary-hover: #0B2726;
+  --color-primary-tint: rgba(16, 55, 54, 0.06);
+  --color-on-primary: #F8F6F1;
+
+  --color-accent: #946E38; /* Burnished bronze */
+  --color-accent-hover: #7B5A2C;
+  --color-accent-text: #7A592A; /* AA-compliant text bronze on #F8F6F1 */
+  --color-accent-on-dark: #E5C89B;
+  --color-on-accent: #FFFFFF;
+
+  --color-hairline: rgba(16, 55, 54, 0.14);
+  --color-hairline-strong: rgba(16, 55, 54, 0.26);
+  --color-hairline-inverse: rgba(248, 246, 241, 0.18);
+
+  /* Semantic States */
+  --color-success: #1E5A47;
+  --color-success-bg: #EEF6F3;
+  --color-warning: #8C6323;
+  --color-warning-bg: #FBF5EA;
+  --color-error: #8E2D24;
+  --color-error-bg: #FCF2F1;
+  --color-info: #1E4E5A;
+  --color-info-bg: #EFF6F8;
+
+  /* ------------------------------------------------------------------------
+     2. Typography System (7 Sizes: 12px to 80px)
+     ------------------------------------------------------------------------ */
+  --font-display: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-body: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  /* Size 1: 12px — Micro captions, uppercase rail labels */
+  --type-xs-size: 0.75rem;
+  --type-xs-leading: 1.4;
+  --type-xs-tracking: 0.08em;
+
+  /* Size 2: 14px — UI controls, metadata, nav links */
+  --type-sm-size: 0.875rem;
+  --type-sm-leading: 1.6;
+  --type-sm-tracking: 0em;
+
+  /* Size 3: 16px — Standard body prose */
+  --type-base-size: 1rem;
+  --type-base-leading: 1.7;
+  --type-base-tracking: 0em;
+
+  /* Size 4: 20px — Lead paragraphs, card subheadings */
+  --type-lg-size: 1.25rem;
+  --type-lg-leading: 1.55;
+  --type-lg-tracking: -0.005em;
+
+  /* Size 5: 28px — Card & subsection serif titles */
+  --type-xl-size: 1.75rem;
+  --type-xl-leading: 1.2;
+  --type-xl-tracking: -0.01em;
+
+  /* Size 6: 44px — Section serif headings */
+  --type-2xl-size: 2.75rem;
+  --type-2xl-leading: 1.1;
+  --type-2xl-tracking: -0.015em;
+
+  /* Size 7: 80px (44px mobile → 80px desktop) — Hero display & architectural statements */
+  --type-display-size: clamp(2.75rem, 5vw, 5rem);
+  --type-display-leading: 1.02;
+  --type-display-tracking: -0.02em;
+
+  /* ------------------------------------------------------------------------
+     3. Spacing Scale (4px Base)
+     ------------------------------------------------------------------------ */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+  --space-30: 120px;
+  --space-35: 140px;
+
+  /* ------------------------------------------------------------------------
+     4. Radius Scale
+     ------------------------------------------------------------------------ */
+  --radius-none: 0px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* ------------------------------------------------------------------------
+     5. Shadow Scale (3 Levels)
+     ------------------------------------------------------------------------ */
+  --shadow-1: 0 2px 10px -2px rgba(16, 55, 54, 0.05);
+  --shadow-2: 0 12px 28px -8px rgba(16, 55, 54, 0.1);
+  --shadow-3: 0 24px 48px -12px rgba(16, 55, 54, 0.14);
+
+  /* ------------------------------------------------------------------------
+     6. Z-Index Scale
+     ------------------------------------------------------------------------ */
+  --z-base: 0;
+  --z-raised: 10;
+  --z-nav: 40;
+  --z-overlay: 50;
+  --z-modal: 60;
+
+  /* ------------------------------------------------------------------------
+     7. Motion Curves & Durations
+     ------------------------------------------------------------------------ */
+  --ease-editorial: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-fast: 180ms;
+  --duration-base: 320ms;
+  --duration-slow: 600ms;
+}

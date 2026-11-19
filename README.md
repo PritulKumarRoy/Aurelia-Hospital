@@ -1,11 +1,34 @@
-<div align="center">
+# Aurelia Private Hospital
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+A full-stack private hospital web application built with React, Vite, Tailwind CSS, Framer Motion (`motion/react`), and a single-process Node.js / Express backend.
 
-  <h1>Built with AI Studio</h2>
+## Architecture
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+- `server.js` — Single Express entrypoint serving `/api/*` endpoints and static assets from `client/dist`.
+- `client/` — React + TypeScript + Vite frontend application.
+- `client/dist/` — Production build output served by `server.js`.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Local Development
 
-</div>
+```bash
+npm install
+cd client && npm install && cd ..
+npm run dev
+```
+
+## Deploy to Hostinger
+
+1. Install dependencies and build the React client:
+   ```bash
+   npm install && npm run build
+   ```
+2. Create a `.env` file in the project root based on `.env.example`:
+   ```bash
+   cp .env.example .env
+   ```
+   Ensure `PORT` (for example `PORT=3000`) and any custom clinic settings are configured in `.env` or your Hostinger Node.js environment variables panel.
+3. Start the production server:
+   ```bash
+   node server.js
+   ```
+   Verify health at `GET /api/health`, which returns `{ "ok": true }`.
